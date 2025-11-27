@@ -19,11 +19,11 @@ class ContainerDataApp(private val context: Context) :
 }
 
 class AplikasiSiswa : Application() {
-    lateinit var containerApp: ContainerApp
+    lateinit var container: ContainerApp
 
     override fun onCreate() {
         super.onCreate()
-        containerApp = ContainerDataApp(this)
+        container = ContainerDataApp(this)
     }
 }
 
